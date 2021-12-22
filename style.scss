@@ -1,3 +1,11 @@
+
+$padding16: 16px;
+
+@mixin boxShadow ($shadowColor: red) {
+  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+}
 body {
     font: 100% "Space Mono", monospace;
     color: #2748b3;
@@ -21,12 +29,6 @@ body {
     background-attachment: fixed;
   }
   
-  @mixin boxShadow ($shadowColor: red) {
-    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  }
-  
   article {
     display: flex;
     flex-wrap: wrap;
@@ -34,8 +36,8 @@ body {
       flex-grow: 1;
       flex-basis: 45%;
       border: 1px silver solid;
-      @include boxShadow();
-      padding: 16px;
+      @include boxShadow;
+      padding: $padding16;
       margin: 16px;
       clear: both;
       overflow: auto;
@@ -57,7 +59,7 @@ body {
     margin-bottom: 1.6em;
     max-width: 100%;
     overflow: auto;
-    padding: 16px;
+    padding: $padding16;
     display: block;
     white-space: pre-wrap;
 
@@ -71,6 +73,7 @@ body {
         width: 40%;
       }
   } 
+  
   h1,h2,h6 {
     color: #6b8eff;
     h1 {
@@ -79,14 +82,14 @@ body {
     h6 {
       text-align: center;
       font-size: 2em;
-      padding: 32px;
+      padding: $padding16 *2;
       margin-bottom: 0px;
     }
   }
   .message, .success, .error, .warning {
     border: 1px solid #ccc;
-    padding: 16px;
     margin: 16px;
+    padding: $padding16;
     color: #2748b3;
     background-color: #000; 
     }

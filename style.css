@@ -85,8 +85,8 @@ h1 h6, h2 h6, h6 h6 {
 
 .message, .success, .error, .warning {
   border: 1px solid #ccc;
-  padding: 16px;
   margin: 16px;
+  padding: 16px;
   color: #2748b3;
   background-color: #000;
 }
