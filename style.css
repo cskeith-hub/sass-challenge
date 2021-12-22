@@ -1,7 +1,7 @@
 a{
-  border: 2px solid #2748b3 ;
+  border: 2px solid red ;
   border-radius: 10px;
-  color: #2748b3;
+  color: red;
 }
 body {
   font: 100% "Space Mono", monospace;
