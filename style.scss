@@ -1,5 +1,4 @@
 $padding16: 16px;
-
 @mixin boxShadow ($shadowColor: red) {
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
@@ -27,7 +26,6 @@ body {
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
   }
-  
   article {
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +45,6 @@ body {
       flex-basis: 100%;
     } 
   }
-
   article pre {
     background: #000;
     border: 1px solid #ddd;
@@ -61,18 +58,15 @@ body {
     padding: $padding16;
     display: block;
     white-space: pre-wrap;
-
       article pre.before {
         float: left;
-        width: 40%;
-          
+        width: 40%;   
       }
       article pre.after {
         float: right;
         width: 40%;
       }
   } 
-  
   h1,h2,h6 {
     color: #6b8eff;  
   }
