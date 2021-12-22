@@ -1,3 +1,8 @@
+a{
+  border: 2px solid #2748b3 ;
+  border-radius: 10px;
+  color: #2748b3;
+}
 body {
   font: 100% "Space Mono", monospace;
   color: #2748b3;
